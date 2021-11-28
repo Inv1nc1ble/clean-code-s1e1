@@ -1,15 +1,17 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Todo App</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="style.css" media="screen">
 </head>
 
 <body>
-  <div class="header"><img src="./eisenhower-matrix.jpg"><a class="header-link"
+  <header class="header"><img src="./eisenhower-matrix.jpg"><a class="header-link"
       href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="main-form">
+  </header>
+  <main class="main-form">
     <p id="top-section-for-adding-element-to-list"><label for="new-task">Add Item</label>
       <div class="task-row-wrapper"><input id="new-task" class="task" type="text"><button>Add</button></div>
     </p>
@@ -24,17 +26,20 @@
         <input type="checkbox">
         <label class="task">Go Shopping</label>
         <input type="text" value="Go Shopping" class="task">
-        <button class="edit">Save</button><button class="delete"><img src="./remove.svg"></button>
+        <button class="edit">Save</button>
+        <button class="delete"><img src="./remove.svg"></button>
       </li>
     </ul>
     <h3 class="list-title">Completed</h3>
     <ul id="completed-tasks">
       <li>
         <input type="checkbox" checked><label class="task">See the Doctor</label>
-        <input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
+        <input type="text" class="task">
+        <button class="edit">Edit</button>
+        <button class="delete"><img src="./remove.svg"></button>
       </li>
     </ul>
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
