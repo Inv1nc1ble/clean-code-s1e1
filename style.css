@@ -41,6 +41,7 @@ body {
   flex-grow: 1;
 }
 
+.add-item-wrapper,
 .task-row-wrapper {
   display: flex;
 }
@@ -119,7 +120,9 @@ button {
   align-items: center;
 }
 
-
+#new-task {
+  width: 318px;
+}
 
 .list-item__checked {
   margin: 0 10px;
